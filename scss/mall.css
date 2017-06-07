@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px; }
+
+a {
+  text-decoration: none; }
+
+header .top {
+  background-color: #f6f6f6;
+  height: 36px;
+  width: 100%; }
+  header .top ul {
+    float: left;
+    display: inline; }
+    header .top ul li {
+      float: left;
+      display: inline;
+      border-right: #e2e2e2 solid 1px; }
+
+/*# sourceMappingURL=mall.css.map */

@@ -1,0 +1,842 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font: 12px/1.5 'Microsoft Yahei', Tahoma, Helvetica, Arial, sans-serif, \5b8b\4f53;
+    color: #5E5E5E;
+    background: #f6f6f6;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Microsoft Yahei';
+}
+
+.onea {
+    text-align: right;
+    padding-top: 20px;
+    a {
+        color: #ff3366;
+        font-size: 14px;
+    }
+}
+
+header {
+    .top {
+        background-color: #f6f6f6;
+        height: 34px;
+        width: 100%;
+        ul {
+            float: left;
+            display: inline;
+            margin-left: 30px;
+            li {
+                float: left;
+                display: inline;
+                border-right: #e2e2e2 solid 1px;
+                line-height: 34px;
+                a {
+                    display: block;
+                    padding: 0 25px;
+                    color: #666;
+                    height: 34px;
+                    font-size: 12px;
+                    float: left;
+                    em {
+                        background: url(../images/mall/icon-phone.gif) no-repeat;
+                        width: 12px;
+                        height: 32px;
+                        display: block;
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
+    .head {
+        background-color: #fff;
+        width: 100%;
+        margin: 0 auto;
+        .area {
+            width: 1200px;
+            position: relative;
+            height: 85px;
+            margin: 0 auto;
+            >a {
+                position: absolute;
+                top: 17px;
+                left: 0;
+                width: 231px;
+                height: 52px;
+            }
+        }
+        .three {
+            background: url(../images/mall/three.gif) no-repeat;
+            position: absolute;
+            top: 28px;
+            width: 465px;
+            height: 32px;
+            right: 290px;
+        }
+        .search {
+            position: absolute;
+            top: 25px;
+            right: 0;
+            width: 237px;
+            height: 35px;
+            form {
+                span {
+                    display: block;
+                    width: 200px;
+                    height: 35px;
+                    background-color: #efefef;
+                    float: left;
+                    input {
+                        border: 0 none;
+                        outline: 0 none;
+                        background: #efefef;
+                        width: 190px;
+                        height: 30px;
+                        line-height: 30px;
+                        margin: 2px 0 0 10px;
+                        color: #d4d4d4;
+                        font-family: "Microsoft Yahei", Tahoma, Helvetica, Arial, sans-serif, 宋体;
+                    }
+                }
+                .secondinput {
+                    background: url(../images/mall/header-total.gif) no-repeat right -65px;
+                    border: 0 none;
+                    cursor: pointer;
+                    height: 35px;
+                    width: 37px;
+                    display: block;
+                    color: white;
+                    padding-bottom: 2px;
+                    text-align: center;
+                }
+            }
+        }
+        .mainnav {
+            width: 100%;
+            height: 40px;
+            background-color: #2a142b;
+            .navs {
+                width: 1200px;
+                height: 40px;
+                margin: 0 40px;
+                display: block;
+                ul {
+                    float: left;
+                    display: inline;
+                    li {
+                        float: left;
+                        height: 40px;
+                        display: inline;
+                        position: relative;
+                        z-index: 111;
+                        cursor: pointer;
+                        a {
+                            display: block;
+                            padding: 10px 24px 0;
+                            color: #fff;
+                            font-size: 14px;
+                            height: 30px;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                            em {
+                                background: url(../images/mall/icon-total.png) no-repeat right top;
+                                width: 15px;
+                                height: 16px;
+                                float: left;
+                                margin-top: 3px;
+                                display: inline-block;
+                                vertical-align: -3px;
+                                margin-right: 3px;
+                            }
+                        }
+                        &:first-child {
+                            background: #f8285c;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.leing {
+    line-height: 22px;
+    padding-top: 15px;
+    color: #919191;
+    font-size: 14px;
+}
+
+.em1 {
+    font-style: normal;
+}
+
+section {
+    .hot {
+        float: right;
+        display: block;
+        background: #fff;
+        padding: 20px;
+        width: 243px;
+        ul li {
+            position: relative;
+            margin-bottom: 20px;
+            width: 243px;
+            a img {
+                width: 245px;
+                height: 245px
+            }
+        }
+        h3 {
+            position: relative;
+            padding-bottom: 25px;
+            .lines {
+                border-bottom: 1px solid #fff;
+                margin: 0 auto;
+                border-top: 1px solid #2a142b;
+                height: 0;
+                overflow: hidden;
+            }
+            .texts {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -21px;
+                margin-left: -57px;
+                width: 115px;
+                height: 18px;
+                text-align: center;
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: normal;
+                background: #fff;
+                color: #2a142b;
+            }
+        }
+    }
+    width: 1200px;
+    margin: 0 auto;
+    .place {
+        font-size: 12px;
+        padding: 20px 10px;
+        margin-bottom: 10px;
+        background: #fff;
+        a {
+            color: #5e5e5e;
+            margin: 0 3px;
+        }
+    }
+    .w1200 {
+        .showbox {
+            width: 895px;
+            overflow: hidden;
+            background: #fff;
+            .babypart {
+                padding-top: 0;
+                background: #fff;
+                padding: 20px;
+                .xiaobao {
+                    margin: 0 20px;
+                    padding: 30px 80px;
+                    background: #fff;
+                    border: 2px solid #f6f6f6;
+                    border-bottom: none;
+                    .xb {
+                        margin: 0 20px;
+                        padding: 25px 30px;
+                        position: relative;
+                        div {
+                            width: 628px;
+                            height: 137px;
+                            display: none;
+                            margin: 0 auto;
+                        }
+                        .div1 {
+                            background: url(../images/mallde/steup1.gif) no-repeat;
+                            display: block;
+                        }
+                        .div2 {
+                            background: url(../images/mallde/steup2.gif) no-repeat;
+                        }
+                        .div3 {
+                            background: url(../images/mallde/steup3.gif) no-repeat;
+                        }
+                        .div4 {
+                            background: url(../images/mallde/steup4.gif) no-repeat;
+                        }
+                        .div5 {
+                            background: url(../images/mallde/steup5.gif) no-repeat;
+                        }
+                        .div6 {
+                            background: url(../images/mallde/steup6.gif) no-repeat;
+                        }
+                        .div7 {
+                            background: url(../images/mallde/steup7.gif) no-repeat;
+                        }
+                    }
+                    .icons {
+                        position: relative;
+                        height: 94px;
+                        z-index: 999;
+                        background: url(../images/mallde/xiaobao.gif) no-repeat;
+                        a {
+                            width: 71px;
+                            height: 94px;
+                            position: absolute;
+                            cursor: pointer;
+                            background: url(../images/mallde/item.gif) no-repeat;
+                            background-position: 0 -2000px;
+                        }
+                        .a1 {
+                            left: 0;
+                            &:hover {
+                                background-position: 0 -76px;
+                            }
+                        }
+                        .a2 {
+                            left: 111px;
+                            &:hover {
+                                background-position: 0px -227px;
+                            }
+                        }
+                        .a3 {
+                            left: 222px;
+                            &:hover {
+                                background-position: 0 -325px;
+                            }
+                        }
+                        .a4 {
+                            left: 332px;
+                            &:hover {
+                                background-position: -87px -76px;
+                            }
+                        }
+                        .a5 {
+                            left: 442px;
+                            &:hover {
+                                background-position: -88px -222px;
+                            }
+                        }
+                        .a6 {
+                            left: 554px;
+                            &:hover {
+                                background-position: -89px -320px;
+                            }
+                        }
+                        .a7 {
+                            left: 664px;
+                            &:hover {
+                                background-position: -169px -76px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .clear {
+            clear: both;
+        }
+        .fl {
+            float: left;
+            display: inline;
+        }
+        .fr {
+            float: right;
+            display: inline;
+        }
+        .contain {
+            margin-bottom: 20px;
+            width: 75%;
+            .qual {
+                width: 885px;
+                background: #fff;
+                height: 71px;
+                margin-bottom: 20px;
+                padding: 20px;
+                margin-top: 20px;
+                .qual1 {
+                    background: url(../images/mallde/zijian.gif) no-repeat;
+                    width: 859px;
+                    height: 71px;
+                }
+            }
+            .comment {
+                background: #fff;
+                margin-top: 10px;
+                overflow: hidden;
+                color: #5E5E5E;
+                .com {
+                    background: #fff;
+                    padding: 20px;
+                    display: block;
+                    margin-top: 0px;
+                    .infor {
+                        padding: 20px;
+                        padding-top: 0px;
+                        background: #fff;
+                        .com-box {
+                            margin: 0 20px;
+                            .p1-box {
+                                height: 28px;
+                                border-top: 1px solid #e8e8e8;
+                                margin-bottom: 15px;
+                                margin-top: 30px;
+                                p {
+                                    width: 279px;
+                                    height: 27px;
+                                    margin: 0 auto;
+                                    text-align: center;
+                                    line-height: 27px;
+                                    color: #666;
+                                    font-size: 14px;
+                                }
+                            }
+                            .com-list {
+                                width: 815px;
+                                ul {
+                                    li {
+                                        padding: 18px 0;
+                                        border-bottom: 1px dotted #f1f1f1;
+                                        color: #919191;
+                                        .rate {
+                                            span {
+                                                font-size: 12px;
+                                                color: #919191;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .imgs {
+                    p {
+                        width: 709px;
+                        margin: 0 auto;
+                    }
+                }
+                .baby-tab1 {
+                    width: 100%;
+                    height: 50px;
+                    background: #fff;
+                    z-index: 999;
+                    h3 {
+                        margin: 0;
+                        padding: 8px;
+                        margin-bottom: 15px;
+                        position: relative;
+                        .it-line {
+                            border-bottom: 1px solid #fff;
+                            margin: 20px auto 0;
+                            border-top: 1px solid #2a142b;
+                            height: 0px;
+                            overflow: hidden;
+                        }
+                        .line-txt {
+                            width: 125px;
+                            font-size: 18px;
+                            color: rgb(42, 20, 43);
+                            position: absolute;
+                            left: 50%;
+                            top: 17px;
+                            margin-left: -76px;
+                            text-align: center;
+                            height: 18px;
+                            line-height: 18px;
+                            font-weight: normal;
+                            background: url(../images/mallde/info_bg.gif) 0% 0% no-repeat scroll transparent;
+                        }
+                    }
+                }
+                .tab {
+                    margin-bottom: 10px;
+                    width: 900px;
+                    background: #fff;
+                    height: 50px;
+                    z-index: 999;
+                    ul .showme {
+                        a {
+                            color: #F36;
+                        }
+                        div {
+                            display: block;
+                        }
+                    }
+                    ul li {
+                        float: left;
+                        border-right: 1px solid #e2e2e2;
+                        position: relative;
+                        a {
+                            color: #666;
+                            padding: 0 30px;
+                            line-height: 50px;
+                            font-size: 14px;
+                            display: block;
+                        }
+                        div {
+                            display: none;
+                            position: absolute;
+                            width: 100%;
+                            height: 2px;
+                            top: 0;
+                            background: #F36;
+                            overflow: hidden;
+                        }
+                    }
+                    .golb {
+                        float: right;
+                        width: 383px;
+                        .btns {
+                            width: 135px;
+                            height: 50px;
+                            line-height: 50px;
+                            text-align: center;
+                            display: block;
+                            color: #fff;
+                            font-size: 16px;
+                            font-weight: bold;
+                            text-decoration: none;
+                            background: url(../images/mallde/item.gif) 0px -452px no-repeat scroll transparent;
+                            background-position: 0px -452px;
+                            float: right;
+                        }
+                        .pspan {
+                            padding: 0 5px;
+                            height: 20px;
+                            background: #F8285C;
+                            margin-top: 12px;
+                            text-align: center;
+                            line-height: 18px;
+                            color: #fff;
+                            float: left;
+                            position: relative;
+                            margin-right: 16px;
+                            .tip_b {
+                                background: url(../images/mallde/tips.gif) no-repeat;
+                                width: 9px;
+                                height: 20px;
+                                position: absolute;
+                                top: 0;
+                                right: -9px;
+                            }
+                        }
+                        .price {
+                            .org {
+                                color: #F8285C;
+                                font-size: 14px;
+                                font-style: normal;
+                            }
+                            .current {
+                                font-size: 32px;
+                                color: #F8285C;
+                                font-family: Arial;
+                                vertical-align: -2px;
+                                line-height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+            .product {
+                background: #fff;
+                width: 895px;
+                height: 320px;
+                .pic {
+                    padding: 10px 0 10px 0;
+                    position: relative;
+                    width: 33%;
+                    margin-right: 20px;
+                    a img {
+                        display: block;
+                        width: 300px;
+                        opacity: 1;
+                        &:hover {
+                            opacity: 0.9;
+                        }
+                    }
+                }
+                .info {
+                    color: #666;
+                    position: relative;
+                    width: 64%;
+                    padding-top: 10px;
+                    h3 {
+                        font-size: 18px;
+                        color: #333;
+                        font-weight: normal;
+                        width: 600px;
+                        overflow: hidden;
+                        a {
+                            color: #333;
+                            font-weight: 400;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    p {
+                        line-height: 40px;
+                        overflow: hidden;
+                        .span1 {
+                            padding-right: 20px;
+                            em {
+                                color: #999;
+                                text-decoration: line-through;
+                                font-style: normal;
+                            }
+                        }
+                        .twoem {
+                            color: #F8285C;
+                            font-style: normal;
+                        }
+                    }
+                    .price {
+                        .pspan {
+                            padding: 0 5px;
+                            height: 20px;
+                            background: #F8285C;
+                            float: left;
+                            margin-top: 12px;
+                            text-align: center;
+                            line-height: 18px;
+                            color: #fff;
+                            position: relative;
+                            margin-right: 16px;
+                            .tip_b {
+                                background: url(../images/mallde/tips.gif) no-repeat;
+                                width: 9px;
+                                height: 20px;
+                                position: absolute;
+                                top: 0;
+                                right: -9px;
+                            }
+                        }
+                        .org {
+                            color: #F8285C;
+                            font-size: 14px;
+                            font-style: normal;
+                        }
+                        .current {
+                            font-size: 32px;
+                            color: #F8285C;
+                            font-family: Arial;
+                            vertical-align: -2px;
+                            line-height: 40px;
+                        }
+                    }
+                    .btn-i {
+                        margin-top: 15px;
+                        position: relative;
+                        .share {
+                            display: block;
+                            float: left;
+                            padding-top: 3px;
+                            position: absolute;
+                            bottom: -40px;
+                            right: 10px;
+                            a {
+                                color: #5e5e5e;
+                                &:hover {
+                                    color: #f8285c;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                        span {
+                            position: relative;
+                            a {
+                                border-radius: 5px;
+                                line-height: 60px;
+                                color: #fff;
+                                text-align: center;
+                                width: 150px;
+                                height: 60px;
+                                margin-right: 20px;
+                                background: none repeat scroll 0% 0% #F36;
+                                display: block;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    .baby {
+                        margin-top: 12px;
+                        margin-bottom: 5px;
+                        .shottime {
+                            border: 1px solid #f1f1f1;
+                            background: #fff;
+                            color: #c6c6c6;
+                            margin-left: 10px;
+                            margin-top: 10px;
+                            width: 78px;
+                            height: 22px;
+                            border-radius: 2px;
+                            display: block;
+                            float: left;
+                            line-height: 22px;
+                            text-align: center;
+                            float: left;
+                            a {
+                                color: #5e5e5e;
+                                &:hover {
+                                    color: #f8285c;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                    .otherinfo {
+                        height: 25px;
+                        overflow: hidden;
+                        border-top: 1px dotted #e2e2e2;
+                        padding: 10px 0;
+                        a {
+                            height: 25px;
+                            float: left;
+                            display: inline;
+                            padding: 0 15px;
+                            text-align: center;
+                            line-height: 25px;
+                            border-radius: 20px;
+                            text-decoration: none;
+                            margin-right: 10px;
+                            font-size: 14px;
+                            color: #999;
+                            background: #f6f6f6;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ce003f;
+    clear: both;
+    .foot {
+        border-top: 3px solid #f8285c;
+        .white {
+            width: 1100px;
+            padding: 0 50px;
+            margin: 0 auto;
+            padding-bottom: 30px;
+            .youqing {
+                height: 20px;
+                padding: 10px 0;
+                border-bottom: 1px dotted #ccc;
+                color: #999;
+                overflow: hidden;
+                magin: 0 auto;
+                clear: both;
+            }
+            p {
+                text-align: center;
+                padding-top: 20px;
+                color: #c6c6c6;
+                a {
+                    color: #c6c6c6;
+                }
+            }
+            .con-box {
+                div {
+                    float: left;
+                    display: inline;
+                }
+                padding-top:25px;
+                margin: 0 auto;
+                .zaixian {
+                    margin-top: 34px;
+                    height: 35px;
+                    float: right;
+                    display: inline;
+                    position: absolute;
+                    top: 35px;
+                    a {
+                        display: block;
+                        width: 86px;
+                        height: 35px;
+                        float: left;
+                        background: url(../images/mall/service_add.gif) no-repeat 0 -52px;
+                    }
+                    span {
+                        padding-left: 10px;
+                        width: 65px;
+                        float: left;
+                        p {
+                            color: #919191;
+                            padding: 0;
+                            line-height: 18px;
+                        }
+                    }
+                }
+                .appside {
+                    width: 90px;
+                    top: -22px;
+                    text-align: center;
+                    p:nth-child(1) {
+                        height: 90px;
+                        width: 90px;
+                        margin-top: 5px;
+                    }
+                    p:nth-child(2) {
+                        color: #f8285c;
+                        margin: 10px 0;
+                        font-size: 12px;
+                    }
+                }
+                .app_txt {
+                    padding-left: 65px;
+                    overflow: hidden;
+                    dl {
+                        width: 200px;
+                        float: left;
+                        display: inline;
+                        dt {
+                            font-size: 14px;
+                            color: #333;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                            padding-left: 7px;
+                        }
+                        dd {
+                            margin-bottom: 5px;
+                            color: #666;
+                            a {
+                                color: #666;
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                                i {
+                                    width: 4px;
+                                    height: 4px;
+                                    overflow: hidden;
+                                    border-radius: 50%;
+                                    background-color: #c6c6c6;
+                                    display: inline-block;
+                                    margin-right: 5px;
+                                    float: left;
+                                    margin-top: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

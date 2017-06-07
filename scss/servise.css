@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Verdana, Microsoft YaHei;
+}
+
+body {
+  font-size: 12px;
+  background: #f6f6f6;
+}
+
+header {
+  width: 94%;
+  overflow: hidden;
+  line-height: 51px;
+  padding-top: 25px;
+  margin: 0 auto;
+  height: 51px;
+}
+header a {
+  color: #000;
+  text-decoration: none;
+  margin-right: 20px;
+  display: block;
+  height: 67px;
+  float: left;
+  width: 252px;
+  transition: all 1s;
+}
+header a:hover {
+  transform: scale(1.1);
+}
+header .logo i {
+  color: #ff6100;
+  font-size: 14px;
+  float: left;
+  font-style: normal;
+}
+header a img {
+  height: 46px;
+}
+header .search {
+  float: right;
+}
+header .search input {
+  color: #999;
+  height: 33px;
+  width: 268px;
+  line-height: 33px;
+  border: 1px solid #d0d0d0;
+  margin-right: 5px;
+  padding: 0 10px;
+}
+header .search button {
+  width: 76px;
+  height: 35px;
+  background: #f04243;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  line-height: 35px;
+}
+
+nav .dingyue {
+  width: 94%;
+  position: relative;
+  height: 75px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+nav .dingyue .tig {
+  margin-top: 10px;
+  height: 64px;
+  position: absolute;
+  width: 100%;
+}
+nav .dingyue .tig .gundong {
+  height: 22px;
+  line-height: 22px;
+  font-size: 15px;
+  color: #555;
+  margin-top: 13px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  overflow: hidden;
+  text-align: right;
+}
+nav .dingyue .tig .gundong ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+nav .dingyue .tig .left-span {
+  float: right;
+  width: 208px;
+  height: 30px;
+}
+nav .dingyue .tig .left-span .spanone {
+  float: left;
+  width: 100px;
+  background: #ff6100;
+  color: #FFF;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+}
+nav .dingyue .tig .left-span .spantwo {
+  float: left;
+  width: 93px;
+  background: #413f40;
+  color: #FFF;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 15px;
+  text-align: center;
+}
+nav .dingyue .list {
+  position: relative;
+}
+nav .dingyue .list dl {
+  float: left;
+  width: 65px;
+  height: 75px;
+  margin-right: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+nav .dingyue .list dl:hover {
+  top: -5px;
+}
+nav .dingyue .list dl:hover img {
+  transform: scale(1.1);
+  opacity: 1;
+}
+nav .dingyue .list dl dt {
+  width: 45px;
+  padding: 0 10px;
+  height: 55px;
+}
+nav .dingyue .list dl dt a img {
+  transition: all .6s;
+  opacity: .7;
+}
+nav .dingyue .list dl dd {
+  line-height: 30px;
+  height: 30px;
+  width: 65px;
+  text-align: center;
+  font-weight: 700;
+  position: absolute;
+  top: 48px;
+}
+nav .nav {
+  width: 94%;
+  height: 45px;
+  font-size: 16px;
+  background: #474546;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+nav .nav li {
+  float: left;
+  transition: background .7s;
+}
+nav .nav li:hover > a {
+  color: #fd5e02;
+  transition-duration: 0s;
+}
+nav .nav li:hover {
+  background: #000;
+  transition-duration: 0s;
+}
+nav .nav li:hover > ul {
+  display: block;
+}
+nav .nav li ul {
+  display: none;
+  z-index: 10;
+  background: #999;
+  position: absolute;
+}
+nav .nav li ul li {
+  clear: both;
+  border: 0;
+  background: #999;
+  font-size: 14px;
+  line-height: 36px;
+  position: relative;
+  height: 36px;
+  width: 100%;
+  vertical-align: top;
+  transition: background .7s;
+}
+nav .nav li ul li:hover > ul {
+  display: block;
+}
+nav .nav li ul li a {
+  padding: 0 20px;
+  border: 0;
+  height: 36px;
+  line-height: 36px;
+  transition: color .5s;
+}
+nav .nav li ul li ul {
+  display: none;
+  z-index: 10;
+  background: #999;
+  position: absolute;
+  left: 68px;
+  top: 0;
+}
+nav .nav li ul li ul li {
+  clear: both;
+  border: 0;
+  background: #999;
+  font-size: 14px;
+  line-height: 36px;
+  position: relative;
+  height: 36px;
+  width: 100%;
+  vertical-align: top;
+  transition: background .7s;
+}
+nav .nav li ul li ul li a {
+  padding: 0 20px;
+  border: 0;
+  height: 36px;
+  line-height: 36px;
+  transition: color .5s;
+}
+nav .nav li > a {
+  color: #fff;
+  display: block;
+  padding: 0 20px;
+  text-decoration: none;
+  line-height: 45px;
+  border-right: 1px solid #5a5859;
+  transition: color .5s;
+}
+
+section {
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+section .main {
+  width: 74%;
+  float: left;
+  overflow: hidden;
+}
+section .main .mbx {
+  margin-bottom: 8px;
+  height: 24px;
+  line-height: 24px;
+  color: #aaa;
+}
+section .main .mbx a {
+  text-decoration: none;
+  color: #aaa;
+}
+section aside {
+  width: 25%;
+  float: right;
+  overflow: hidden;
+}
+section aside ul > li {
+  line-height: 28px;
+  font-size: 14px;
+  margin-top: 0px;
+  color: #555;
+  padding-bottom: 20px;
+}
+section aside ul > li h3 {
+  height: 32px;
+  line-height: 34px;
+  overflow: hidden;
+  width: 116px;
+  text-align: center;
+  color: #fff;
+  background: #fb4f4f;
+  font-size: 14px;
+  font-weight: bold;
+}
+section aside ul > li .textwidth {
+  width: 100%;
+  height: 300px;
+}
+section aside ul > li .biaoqian {
+  border-top: 3px solid #fb4f4f;
+  padding: 2px 0;
+}
+section aside ul > li .biaoqian a {
+  font-size: 14px;
+  color: #fff;
+  padding: 3px;
+  margin-right: -1px;
+  text-decoration: none;
+}
+section aside ul > li .oneul {
+  border-top: 3px solid #fb4f4f;
+}
+section aside ul > li .oneul li {
+  padding: 0;
+  background: url(../images/pic.gif) left 13px no-repeat;
+  line-height: 28px;
+  font-size: 14px;
+  margin-top: 0;
+  color: #555;
+  padding-left: 3%;
+}
+section aside ul > li .oneul li a {
+  text-decoration: none;
+  outline: 0;
+  transition: .5s;
+  color: #000;
+}
+section aside ul > li .oneul li a:hover {
+  color: #ff6100;
+}
+section aside ul > li .imgsa img {
+  opacity: 1;
+  transition: .6s;
+}
+section aside ul > li .imgsa img:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+section aside ul > li .login_box {
+  background: #474546;
+}
+section aside ul > li .login_box .form_box {
+  width: 80%;
+  padding: 10%;
+}
+section aside ul > li .login_box .form_box .p1 span {
+  width: 16%;
+  float: left;
+  background: #2c3033;
+  color: #ccc;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+section aside ul > li .login_box .form_box .p2 input {
+  font-size: 18px;
+  text-shadow: 1px 1px 1px #333;
+  cursor: pointer;
+  background: #4ea4ef;
+  color: #fff;
+  border: 0;
+  height: 40px;
+  width: 99%;
+  line-height: 40px;
+}
+section aside ul > li .login_box .form_box .p3 {
+  margin-bottom: 0;
+  height: 20px;
+  display: block;
+  color: #fff;
+}
+section aside ul > li .login_box .form_box .p3 .rightspans {
+  float: right;
+}
+section aside ul > li .login_box .form_box .p3 span {
+  cursor: pointer;
+}
+section aside ul > li .login_box .form_box .p3 a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  transition: .5s;
+}
+section aside ul > li .login_box .form_box .p3 a:hover {
+  color: #00bcf2 !important;
+}
+section aside ul > li .login_box .form_box .p1 input {
+  height: 40px;
+  width: 73%;
+  background: #4d545c;
+  border: 0;
+  line-height: 40px;
+  float: left;
+  color: #fff;
+  padding: 0 5%;
+}
+section aside ul > li .login_box .form_box p {
+  height: 40px;
+  margin-bottom: 15px;
+  display: block;
+}
+section aside ul > li .login_box .form_box .p1:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+footer {
+  width: 94%;
+  margin: auto;
+  margin-top: 20px;
+  text-align: right;
+  padding: 10px 0;
+  border-top: #ddd double 3px;
+  font-size: 14px;
+  font-family: Arial, Microsoft Yahei;
+}
+footer a {
+  color: #fd7b2f;
+  text-decoration: none;
+}
+footer .gotop {
+  display: block;
+  background: #413f40;
+  float: left;
+  color: #fff;
+  font-size: 12px;
+  padding: 3px 12px;
+  cursor: pointer;
+}
+
+.clear {
+  clear: both;
+}
+
+.shangxia {
+  position: fixed;
+  right: 10px;
+  bottom: -152px;
+  z-index: 100;
+}
+.shangxia a {
+  opacity: 0.7;
+  color: #000;
+  text-decoration: none;
+  transition: .5s;
+  outline: 0;
+}
+.shangxia a:hover {
+  opacity: 1;
+}
+.shangxia .tototop {
+  background: url(../images/tototop.gif) #2b87ec no-repeat center center;
+  height: 40px;
+  width: 40px;
+  display: block;
+  cursor: pointer;
+}
+.shangxia .totocon {
+  background: url(../images/totocon.gif) #2b87ec no-repeat center center;
+  margin: 1px 0;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+.shangxia .totodown {
+  background: url(../images/totodown.gif) #2b87ec no-repeat center center;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+/*# sourceMappingURL=servise.css.map */

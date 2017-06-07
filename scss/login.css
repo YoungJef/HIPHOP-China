@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  color: #444;
+}
+
+p {
+  line-height: 1.5;
+  display: block;
+}
+
+#login {
+  padding: 20px 0;
+  width: 320px;
+  margin: auto;
+}
+#login h1 {
+  text-align: center;
+}
+#login h1 a {
+  background-image: url(../images/1.gif) !important;
+}
+
+/*# sourceMappingURL=login.css.map */

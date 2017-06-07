@@ -1,0 +1,721 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Verdana, Microsoft YaHei;
+}
+
+body {
+  font-size: 12px;
+  background: #f6f6f6;
+}
+
+header {
+  width: 94%;
+  overflow: hidden;
+  line-height: 51px;
+  padding-top: 25px;
+  margin: 0 auto;
+  height: 51px;
+}
+header a {
+  color: #000;
+  text-decoration: none;
+  margin-right: 20px;
+  display: block;
+  height: 67px;
+  float: left;
+  width: 252px;
+  transition: all 1s;
+}
+header a:hover {
+  transform: scale(1.1);
+}
+header .logo i {
+  color: #ff6100;
+  font-size: 14px;
+  float: left;
+  font-style: normal;
+}
+header a img {
+  height: 46px;
+}
+header .search {
+  float: right;
+}
+header .search input {
+  color: #999;
+  height: 33px;
+  width: 268px;
+  line-height: 33px;
+  border: 1px solid #d0d0d0;
+  margin-right: 5px;
+  padding: 0 10px;
+}
+header .search button {
+  width: 76px;
+  height: 35px;
+  background: #f04243;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  line-height: 35px;
+}
+
+nav .dingyue {
+  width: 94%;
+  position: relative;
+  height: 75px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+nav .dingyue .tig {
+  margin-top: 10px;
+  height: 64px;
+  position: absolute;
+  width: 100%;
+}
+nav .dingyue .tig .gundong {
+  height: 22px;
+  line-height: 22px;
+  font-size: 15px;
+  color: #555;
+  margin-top: 13px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  overflow: hidden;
+  text-align: right;
+}
+nav .dingyue .tig .gundong ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+nav .dingyue .tig .left-span {
+  float: right;
+  width: 208px;
+  height: 30px;
+}
+nav .dingyue .tig .left-span .spanone {
+  float: left;
+  width: 100px;
+  background: #ff6100;
+  color: #FFF;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+}
+nav .dingyue .tig .left-span .spantwo {
+  float: left;
+  width: 93px;
+  background: #413f40;
+  color: #FFF;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 15px;
+  text-align: center;
+}
+nav .dingyue .list {
+  position: relative;
+}
+nav .dingyue .list dl {
+  float: left;
+  width: 65px;
+  height: 75px;
+  margin-right: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+nav .dingyue .list dl:hover {
+  top: -5px;
+}
+nav .dingyue .list dl:hover img {
+  transform: scale(1.1);
+  opacity: 1;
+}
+nav .dingyue .list dl dt {
+  width: 45px;
+  padding: 0 10px;
+  height: 55px;
+}
+nav .dingyue .list dl dt a img {
+  transition: all .6s;
+  opacity: .7;
+}
+nav .dingyue .list dl dd {
+  line-height: 30px;
+  height: 30px;
+  width: 65px;
+  text-align: center;
+  font-weight: 700;
+  position: absolute;
+  top: 48px;
+}
+nav .nav {
+  width: 94%;
+  height: 45px;
+  font-size: 16px;
+  background: #474546;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+nav .nav li {
+  float: left;
+  transition: background .7s;
+}
+nav .nav li:hover > a {
+  color: #fd5e02;
+  transition-duration: 0s;
+}
+nav .nav li:hover {
+  background: #000;
+  transition-duration: 0s;
+}
+nav .nav li:hover > ul {
+  display: block;
+}
+nav .nav li ul {
+  display: none;
+  z-index: 10;
+  background: #999;
+  position: absolute;
+}
+nav .nav li ul li {
+  clear: both;
+  border: 0;
+  background: #999;
+  font-size: 14px;
+  line-height: 36px;
+  position: relative;
+  height: 36px;
+  width: 100%;
+  vertical-align: top;
+  transition: background .7s;
+}
+nav .nav li ul li:hover > ul {
+  display: block;
+}
+nav .nav li ul li a {
+  padding: 0 20px;
+  border: 0;
+  height: 36px;
+  line-height: 36px;
+  transition: color .5s;
+}
+nav .nav li ul li ul {
+  display: none;
+  z-index: 10;
+  background: #999;
+  position: absolute;
+  left: 68px;
+  top: 0;
+}
+nav .nav li ul li ul li {
+  clear: both;
+  border: 0;
+  background: #999;
+  font-size: 14px;
+  line-height: 36px;
+  position: relative;
+  height: 36px;
+  width: 100%;
+  vertical-align: top;
+  transition: background .7s;
+}
+nav .nav li ul li ul li a {
+  padding: 0 20px;
+  border: 0;
+  height: 36px;
+  line-height: 36px;
+  transition: color .5s;
+}
+nav .nav li > a {
+  color: #fff;
+  display: block;
+  padding: 0 20px;
+  text-decoration: none;
+  line-height: 45px;
+  border-right: 1px solid #5a5859;
+  transition: color .5s;
+}
+
+section {
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+section .main {
+  width: 74%;
+  float: left;
+  overflow: hidden;
+}
+section .main .lunbo {
+  width: 96%;
+  margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 3px;
+  overflow: hidden;
+}
+section .main .dian {
+  position: absolute;
+  bottom: 6px;
+  right: 0px;
+  z-index: 12;
+}
+section .main .dian a:nth-child(1) {
+  background: #ff6100;
+}
+section .main .dian a {
+  display: block;
+  float: left;
+  height: 3px;
+  width: 50px;
+  background: #fff;
+  margin-right: 3px;
+  transition: .5s;
+}
+section .main .img {
+  height: 334px;
+  transition: 0.5s;
+  width: 100%;
+}
+section .main .img ul li:nth-child(1) {
+  opacity: 1;
+}
+section .main .img ul li {
+  height: 334px;
+  margin-bottom: 40px;
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  overflow: hidden;
+}
+section .main .img ul li div {
+  background: #000;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  opacity: .8;
+  padding: 1%;
+  width: 100%;
+}
+section .main .img ul li div p {
+  font-size: 18px;
+  line-height: 28px;
+}
+section .main .img ul li img {
+  height: 334px;
+  opacity: 1;
+  position: absolute;
+  transition: 0.6s;
+}
+section .main .top_box {
+  margin-bottom: 16px;
+}
+section .main .top_box .top_post {
+  background: #eaeaea;
+  width: 96%;
+  height: 40px;
+  margin-bottom: 2px;
+  position: relative;
+}
+section .main .top_box .top_post .title {
+  background: url(../images/top_post.gif) no-repeat;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  font-family: Microsoft YaHei;
+  color: #fff;
+  text-align: center;
+  float: left;
+}
+section .main .top_box .top_post article {
+  height: 40px;
+  overflow: hidden;
+}
+section .main .top_box .top_post article h2 {
+  font-size: 16px;
+  overflow: hidden;
+  line-height: 40px;
+  float: left;
+  margin: 0 30px 0 20px;
+  height: 40px;
+  font-weight: normal;
+}
+section .main .top_box .top_post article h2 a {
+  color: #666;
+  text-decoration: none;
+  outline: 0;
+  transition: .5s;
+}
+section .main .top_box .top_post article h2 a:hover {
+  color: #ff6100;
+}
+section .main .top_box .top_post article h2 .onespan {
+  color: #fff;
+  margin-left: 2px;
+  font-family: Arial;
+  font-style: oblique;
+  background: #ff6100;
+  font-size: 12px;
+  padding: 1px 3px;
+}
+section .main .top_box .top_post article h2 .twospan {
+  color: #999;
+  margin-left: 20px;
+  font-family: Arial;
+  font-style: oblique;
+}
+section .main .art1 {
+  margin-bottom: 70px;
+  position: relative;
+  margin-right: 4%;
+  overflow: hidden;
+  width: 96%;
+  display: block;
+  font-weight: normal;
+}
+section .main .art1 a {
+  color: #000;
+  text-decoration: none;
+  outline: 0;
+}
+section .main .art1 .c-top {
+  margin-bottom: 10px;
+  font-family: inherit;
+}
+section .main .art1 .c-top .datetime {
+  width: 60px;
+  background: #00bcf2;
+  text-align: center;
+  line-height: 20px;
+  float: left;
+  color: #fff;
+  font-size: 14px;
+  font-family: Arial;
+  padding: 8px 0;
+}
+section .main .art1 .c-top .tit {
+  margin-left: 60px;
+  padding-left: 5px;
+}
+section .main .art1 .c-top .tit h2 {
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 5px;
+  height: 24px;
+  line-height: 28px;
+  overflow: hidden;
+  font-weight: normal;
+}
+section .main .art1 .c-top .tit h2 a {
+  color: #ff6100;
+  font-size: 18px;
+  line-height: 28px;
+}
+section .main .art1 .c-top .tit h2 span {
+  font-size: 12px;
+  font-family: Arial;
+  color: #fff;
+  padding: 1px 3px;
+}
+section .main .art1 .c-top .tit .iititle {
+  color: #999;
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+section .main .art1 .c-top .tit .iititle span {
+  margin-right: 30px;
+  color: #999;
+  height: 18px;
+}
+section .main .art1 .c-top .tit .iititle span a {
+  color: #999;
+  transition: .5s;
+}
+section .main .art1 .c-top .tit .iititle span a:hover {
+  color: #fd7b2f;
+}
+section .main .art1 .c-con {
+  line-height: 28px;
+  font-size: 14px;
+  margin-top: 5px;
+  border-bottom: 1px dotted #dfdfdf;
+  padding-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #333;
+}
+section .main .art1 .c-con a {
+  display: block;
+  color: #333;
+}
+section .main .art1 .c-con a img {
+  margin-right: 10px;
+  float: left;
+  transition: all .6s;
+  opacity: 1;
+}
+section .main .art1 .c-con a img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+section .main .art1 .c-con .ooimg {
+  float: right;
+  color: #fff;
+  background: #ccc;
+  padding: 0 10px;
+  height: 18px;
+  line-height: 18px;
+  width: 15%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transition: 0.6s;
+}
+section .main .art1 .c-bot {
+  margin-top: 5px;
+  height: 18px;
+  color: #999;
+}
+section .main .art1 .c-bot .cb {
+  height: 16px;
+  overflow: hidden;
+  float: left;
+  margin-right: 10px;
+  background-position: 0 -55px !important;
+}
+section .main .art1 .c-bot .cb a {
+  color: #999;
+  transition: .5s;
+}
+section .main .art1 .c-bot .cb a:hover {
+  color: #fd7b2f;
+}
+section .main .pagenum .current {
+  background: #413f40 !important;
+  color: #fff;
+}
+section .main .pagenum a {
+  float: left;
+  height: 30px;
+  margin: 10px 2px 10px 0;
+  padding: 0 10px;
+  display: block;
+  background: #ff6002;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  font-family: Arial, Microsoft YaHei;
+  text-decoration: none;
+  outline: 0;
+  transition: .5s;
+}
+section aside {
+  width: 25%;
+  float: right;
+  overflow: hidden;
+}
+section aside ul > li {
+  line-height: 28px;
+  font-size: 14px;
+  margin-top: 0px;
+  color: #555;
+  padding-bottom: 20px;
+}
+section aside ul > li h3 {
+  height: 32px;
+  line-height: 34px;
+  overflow: hidden;
+  width: 116px;
+  text-align: center;
+  color: #fff;
+  background: #fb4f4f;
+  font-size: 14px;
+  font-weight: bold;
+}
+section aside ul > li .textwidth {
+  width: 100%;
+  height: 300px;
+}
+section aside ul > li .biaoqian {
+  border-top: 3px solid #fb4f4f;
+  padding: 2px 0;
+}
+section aside ul > li .biaoqian a {
+  font-size: 14px;
+  color: #fff;
+  padding: 3px;
+  margin-right: -1px;
+  text-decoration: none;
+}
+section aside ul > li .oneul {
+  border-top: 3px solid #fb4f4f;
+}
+section aside ul > li .oneul li {
+  padding: 0;
+  background: url(../images/pic.gif) left 13px no-repeat;
+  line-height: 28px;
+  font-size: 14px;
+  margin-top: 0;
+  color: #555;
+  padding-left: 3%;
+}
+section aside ul > li .oneul li a {
+  text-decoration: none;
+  outline: 0;
+  transition: .5s;
+  color: #000;
+}
+section aside ul > li .oneul li a:hover {
+  color: #ff6100;
+}
+section aside ul > li .imgsa img {
+  opacity: 1;
+  transition: .6s;
+}
+section aside ul > li .imgsa img:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+section aside ul > li .login_box {
+  background: #474546;
+}
+section aside ul > li .login_box .form_box {
+  width: 80%;
+  padding: 10%;
+}
+section aside ul > li .login_box .form_box .p1 span {
+  width: 16%;
+  float: left;
+  background: #2c3033;
+  color: #ccc;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+section aside ul > li .login_box .form_box .p2 input {
+  font-size: 18px;
+  text-shadow: 1px 1px 1px #333;
+  cursor: pointer;
+  background: #4ea4ef;
+  color: #fff;
+  border: 0;
+  height: 40px;
+  width: 99%;
+  line-height: 40px;
+}
+section aside ul > li .login_box .form_box .p3 {
+  margin-bottom: 0;
+  height: 20px;
+  display: block;
+  color: #fff;
+}
+section aside ul > li .login_box .form_box .p3 .rightspans {
+  float: right;
+}
+section aside ul > li .login_box .form_box .p3 span {
+  cursor: pointer;
+}
+section aside ul > li .login_box .form_box .p3 a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  transition: .5s;
+}
+section aside ul > li .login_box .form_box .p3 a:hover {
+  color: #00bcf2 !important;
+}
+section aside ul > li .login_box .form_box .p1 input {
+  height: 40px;
+  width: 73%;
+  background: #4d545c;
+  border: 0;
+  line-height: 40px;
+  float: left;
+  color: #fff;
+  padding: 0 5%;
+}
+section aside ul > li .login_box .form_box p {
+  height: 40px;
+  margin-bottom: 15px;
+  display: block;
+}
+section aside ul > li .login_box .form_box .p1:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+footer {
+  width: 94%;
+  margin: auto;
+  margin-top: 20px;
+  text-align: right;
+  padding: 10px 0;
+  border-top: #ddd double 3px;
+  font-size: 14px;
+  font-family: Arial, Microsoft Yahei;
+}
+footer a {
+  color: #fd7b2f;
+  text-decoration: none;
+}
+footer .gotop {
+  display: block;
+  background: #413f40;
+  float: left;
+  color: #fff;
+  font-size: 12px;
+  padding: 3px 12px;
+  cursor: pointer;
+}
+
+.clear {
+  clear: both;
+}
+
+.shangxia {
+  position: fixed;
+  right: 10px;
+  bottom: -152px;
+  z-index: 100;
+}
+.shangxia a {
+  opacity: 0.7;
+  color: #000;
+  text-decoration: none;
+  transition: .5s;
+  outline: 0;
+}
+.shangxia a:hover {
+  opacity: 1;
+}
+.shangxia .tototop {
+  background: url(../images/tototop.gif) #2b87ec no-repeat center center;
+  height: 40px;
+  width: 40px;
+  display: block;
+  cursor: pointer;
+}
+.shangxia .totocon {
+  background: url(../images/totocon.gif) #2b87ec no-repeat center center;
+  margin: 1px 0;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+.shangxia .totodown {
+  background: url(../images/totodown.gif) #2b87ec no-repeat center center;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+/*# sourceMappingURL=index.css.map */
